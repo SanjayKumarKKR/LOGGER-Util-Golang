@@ -12,6 +12,7 @@ func (l logger) log() {
 		rw.Write([]byte(p[1]))
 	})
 	http.ListenAndServe(":9090", nil)
+
 }
 
 type logger struct {
