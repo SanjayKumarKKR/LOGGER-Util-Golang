@@ -11,6 +11,7 @@ func (l Logger) Log(logMessage string) {
 }
 
 func (l Logger) Show() {
+
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		rw.Header().Set("Content-Type", "text/plain")
