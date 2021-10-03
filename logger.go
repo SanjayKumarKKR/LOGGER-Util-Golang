@@ -5,15 +5,14 @@ import (
 	"strings"
 )
 
-func (l logger) log() {
+func (l Logger) Log() {
 	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		p := strings.Split(r.URL.Path, "/")
 		rw.Header().Set("Content-Type", "application/json")
 		rw.Write([]byte(p[1]))
 	})
-	http.ListenAndServe(":9090", nil)
-
+	http.ListenAndServe(":8080", nil)
 }
 
-type logger struct {
+type Logger struct {
 }
