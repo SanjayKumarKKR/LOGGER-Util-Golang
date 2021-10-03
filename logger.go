@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func logger() {
+func log() {
 	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		p := strings.Split(r.URL.Path, "/")
 		rw.Header().Set("Content-Type", "application/json")
