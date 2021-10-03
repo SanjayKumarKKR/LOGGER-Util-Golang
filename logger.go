@@ -11,7 +11,6 @@ func (l Logger) Log() {
 		rw.Header().Set("Content-Type", "application/json")
 		rw.Write([]byte(p[1]))
 	})
-
 	http.ListenAndServe(":8080", nil)
 }
 
