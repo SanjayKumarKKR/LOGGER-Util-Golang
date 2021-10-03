@@ -14,9 +14,5 @@ func (l logger) log() {
 	http.ListenAndServe(":9090", nil)
 }
 
-type World struct {
-	Message string `json:"message"`
-}
-
 type logger struct {
 }
