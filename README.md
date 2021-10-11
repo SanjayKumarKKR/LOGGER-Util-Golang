@@ -28,7 +28,6 @@ import (
 func main() {
 	l := logger.Logger{}
 	l.Log("Started the project")
-	fmt.Println("sanjay")
 
 	l.Log("Implemented the logic")
 	for i := 0; i < 10; i++ {
@@ -39,3 +38,6 @@ func main() {
 	l.Show()
 }
 ```
+
+![image](https://user-images.githubusercontent.com/39922507/136735688-b183d765-fc1c-42b0-b80b-6557ce9907dc.png)
+
