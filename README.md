@@ -39,5 +39,8 @@ func main() {
 }
 ```
 
+Check ``http://localhost:8080/``
+
+
 ![image](https://user-images.githubusercontent.com/39922507/136735688-b183d765-fc1c-42b0-b80b-6557ce9907dc.png)
 
