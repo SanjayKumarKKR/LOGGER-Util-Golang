@@ -29,17 +29,19 @@ import (
 )
 
 func main() {
-	l := logger.Logger{}
-	l.Log("Started the project")
 
+	l := logger.Logger{Port: "9090", Enabled: false}
+	l.Log("Started the project")
+	
 	l.Log("Implemented the logic")
 	for i := 0; i < 10; i++ {
-		l.Log("Implemented the logic" + strconv.Itoa(i))
+		l.Log("Implemented the logic " + strconv.Itoa(i))
 	}
 	l.Log("Project Completed Successfully")
 
 	l.Show()
 }
+
 ```
 
 Check ``http://localhost:8080/``
