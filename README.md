@@ -19,7 +19,8 @@ Then import it to your project.
 Presumably your application already uses the default log package. To switch, you'll want your code to look like the following:
 
 
-```package main
+```
+package main
 
 import (
 	"fmt"
@@ -32,7 +33,7 @@ func main() {
 
 	l := logger.Logger{Port: "9090", Enabled: false}
 	l.Log("Started the project")
-	
+
 	l.Log("Implemented the logic")
 	for i := 0; i < 10; i++ {
 		l.Log("Implemented the logic " + strconv.Itoa(i))
