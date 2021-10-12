@@ -1,4 +1,6 @@
 # LOGGER-Util-Golang
+[![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/github.com/SanjayKumarKKR/LOGGER-Util-Golang)
+
 logger-util-golang is a Go package that helps to view to view the logs in a webpage rather than a command line. It instantly makes the logging easy as the logs are served under a port. 
 
 # Usage
